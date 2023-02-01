@@ -1,0 +1,144 @@
+.aboutus-section {
+  margin-top: -35px;
+  position: relative;
+  background-image:url("../../../assets/img/backgrounds/aboutus-bg.svg");
+  background-size: 100% 100%;
+}
+
+.aboutus-content {
+  font-size: 0;
+  height: 777px;
+}
+
+.aboutus-section .heading {
+  text-align: left;
+}
+
+.aboutus-text h2 {
+ background-color: #fff0d1;
+ padding-right: 48px;
+ padding-left: 0;
+}
+
+.aboutus-image,
+.aboutus-text {
+  width: 50%;
+  float: left;
+}
+
+.aboutus-image {
+  position: relative;
+  height: 100%;
+}
+
+.aboutus-image img {
+  height: 585px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-filter: drop-shadow(20px 0px 0px #d2614f)
+                  drop-shadow(0px -20px 0px #d2614f);
+  filter: drop-shadow(20px 0px 0px #d2614f)
+          drop-shadow(0px -20px 0px #d2614f);
+}
+
+.aboutus-text {
+  padding-left: 21px;
+  padding-right: 54px;
+  padding-top: 170px;
+}
+
+.aboutus-text p {
+  margin-top: 7px;
+}
+
+@media only screen and (max-width: 1220px) {
+  .aboutus-image img {
+    height: 450px;
+  }
+
+  .aboutus-content {
+    height: 670px;
+  }
+
+  .aboutus-text p {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .aboutus-image img {
+    height: 340px;
+  }
+  .aboutus-content {
+    height: 580px;
+  }
+  .aboutus-text {
+    padding-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutus-image img {
+    height: 305px;
+    filter: drop-shadow(10px 0px 0px #d2614f) 
+            drop-shadow(0px -10px 0px #d2614f);
+  }
+  .aboutus-content {
+    height: 465px;
+  }
+
+  .aboutus-text {
+    padding-top: 58px;
+  }
+
+  .aboutus-text h2 {
+    padding-right: 20px;
+    margin: 19px 0;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+
+  .aboutus-content {
+    height: 590px;
+  }
+
+  .aboutus-image,
+  .aboutus-text {
+    width: 100%;
+    float: none;
+  }
+
+  .aboutus-image {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .aboutus-image img{
+    height: 260px;
+  }
+
+  .aboutus-text {
+    padding-right: 24px;
+  }
+
+  .aboutus-text p {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .aboutus-content {
+    height: 658px;
+  }
+
+  .aboutus-text {
+    padding-top: 67px;
+  }
+
+  .aboutus-image img{
+    height: 235px;
+  }
+}

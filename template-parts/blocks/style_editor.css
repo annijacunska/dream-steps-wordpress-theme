@@ -1,0 +1,116 @@
+h1,
+.editor-styles-wrapper h1 {
+  font-size: 53px;
+  font-weight: 800;
+  letter-spacing: 0.005em;
+  text-transform: uppercase;
+}
+
+h2,
+.editor-styles-wrapper h2 {
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 0.005em;
+  text-transform: uppercase;
+}
+
+h3,
+.editor-styles-wrapper h3 {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+h4,
+.editor-styles-wrapper h4 {
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+h5,
+.editor-styles-wrapper h5 {
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+h6,
+.editor-styles-wrapper h6 {
+  font-size: 17px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+p,
+.editor-styles-wrapper p {
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.editor-styles-wrapper p.large {
+  font-size: 25px;
+}
+
+.editor-styles-wrapper p.medium {
+  font-size: 23px;
+}
+
+/* 
+.btn {
+  display: block;
+} */
+
+
+
+.heading {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.heading h2 {
+  width: auto;
+  display: inline-block;
+  position: relative;
+  margin: 39px 0;
+  padding: 0 48px;
+  z-index: 3;
+}
+
+@media only screen and (max-width: 768px) {
+  .heading h2 {
+    padding: 0 15px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .heading {
+    text-align: start;
+  }
+
+  .heading h2 {
+    padding: 0 5px 0 0;
+    margin: 25px 0;
+  }
+
+  p,
+  .editor-styles-wrapper p {
+    font-size: 14px;
+  }
+}
+
+
+
+.heading::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-bottom: solid 5px #eebe5c;
+  top: 47.5%;
+  left: 0;
+  z-index: 1;
+}

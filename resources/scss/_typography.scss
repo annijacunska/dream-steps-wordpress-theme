@@ -1,0 +1,246 @@
+body {
+  font-family: $f_default;
+  font-size: 17px;
+  background-color: $c_background;
+  color: $c_t_default;
+  line-height: 1.249;
+  font-weight: normal;
+  overflow: visible;
+}
+
+//Paragraph styles
+p {
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 1.634;
+  
+  @media only screen {
+    @media (max-width: $breakpoint_md) {
+      line-height: 1.424;
+    }
+    @media (max-width: $breakpoint_sm) {
+      font-size: 14px;
+    }
+  }
+}
+
+p.small {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.634;
+  text-align: justify;
+  letter-spacing: 0.005em;
+
+  @media only screen {
+    @media (max-width: $breakpoint_md) {
+      line-height: 1.424;
+      font-size: 18px;
+    }
+    @media (max-width: $breakpoint_sm) {
+      line-height: 1.249;
+      font-size: 14px;
+    }
+  }
+}
+
+p.medium {
+  font-size: 23px;
+  line-height: 1.634;
+  letter-spacing: 0.005em;
+
+  @media only screen and (max-width: $breakpoint_md) { font-size: 16px;}
+}
+
+p.large {
+  font-size: 25px;
+  line-height: 1.36;
+  letter-spacing: 0.005em;
+
+  @media only screen {
+    @media (max-width: $breakpoint_md) {
+      font-size: 20px;
+    }
+    @media (max-width: $breakpoint_sm) {
+      font-size: 17px;
+    }
+  }
+}
+
+a { 
+  color: $c_t_default; 
+}
+
+// Editor basics
+.editor p { margin-bottom: 15px; }
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  color: $c_t_default;
+  line-height: 1.249;
+  text-transform: uppercase;
+}
+
+.section h1,
+.section h2,
+.section h3 {
+  margin: 0.83em 0;
+}
+
+h1,
+.editor h1 {
+  font-size: 53px;
+  font-weight: 800;
+  letter-spacing: 0.005em;
+
+  @media only screen {
+    @media (max-width: $breakpoint_md) {
+      font-size: 35px;
+    }
+    @media (max-width: $breakpoint_sm) {
+      font-size: 24px;
+    }
+  }
+}
+
+h2,
+.editor h2 {
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 0.005em;
+  
+  @media only screen {
+    @media (max-width: $breakpoint_md) {
+      font-size: 35px;
+    }
+    @media (max-width: $breakpoint_sm) {
+      font-size: 24px;
+    }
+  }
+}
+
+h3,
+.editor h3 {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+h4,
+.editor h4 {
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+
+  @media only screen and (max-width: $breakpoint_md) {font-size: 16px;}
+}
+
+h5,
+.editor h5 {
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+
+  @media only screen and (max-width: 620px) {font-size: 12px;}
+}
+
+h6,
+.editor h6 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+h1.error-code {
+  color: $c_t_accent;
+  font-size: 310px;
+  display: inline-block;
+
+  @media only screen {
+    @media (max-width: $breakpoint_lg) {
+      font-size: 200px;
+    }
+    @media (max-width: 600px) {
+      font-size: 110px;
+    }
+  }
+}
+
+// List styles
+.ul,
+.editor ul:not(.wp-block-gallery) {
+  margin-bottom: 30px;
+
+  li {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 10px;
+  }
+  li:last-child { margin-bottom: 0; }
+
+  li:before {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    background: $c_primary;
+    border-radius: 50%;
+    content: '';
+  }
+}
+
+//Button style
+button,
+.woocommerce button.button,
+button.button,
+.woocommerce a.button,
+a.button,
+.woocommerce-cart .wc-proceed-to-checkout a.button.checkout-button {
+  color: $c_t_light;
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  line-height: 1.249;
+  margin: 30px 0;
+  padding: 13px 24px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    color: $c_t_light;
+  }
+}
+
+.btn-arrow,
+.btn-arrow-reversed {
+  // display: inline-block;
+  width: 70px;
+  height: 16px;
+  background-image: url("../img/icons/arrow.svg");
+  background-repeat: no-repeat;
+  margin-left: 53px;
+  float: right;
+  transform: translateY(25%);
+}
+
+.btn-arrow-reversed {
+  transform: rotateY(180deg) translateY(25%);
+  margin-left: 0;
+  margin-right: 53px;
+  float: left;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url($select_arrow);
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 5px;
+  margin-right: 2rem;
+  padding-right: 2rem;
+	&:focus-visible {
+			outline: none;
+	}
+}

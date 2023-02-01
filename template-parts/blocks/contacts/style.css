@@ -1,0 +1,52 @@
+.contacts-section {
+  padding: 26px 0;
+}
+
+.contacts-section .icon.instagram,
+.contacts-section .icon.facebook  {
+  filter: brightness(0);
+  margin-left: 0;
+  margin-right: 10px;
+  width: 26px;
+  height: 26px;
+}
+
+#bootstrap-overrides .container.default .contacts-section p {
+  margin-bottom: 8px;
+}
+
+span.contacts-icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 18px;
+  vertical-align: text-bottom;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.contacts-icon.address {
+  background-image: url(../../../assets/img/icons/contact-address.svg);
+}
+
+.contacts-icon.email {
+  background-image: url(../../../assets/img/icons/contact-email.svg);
+}
+
+.contacts-icon.phone {
+  background-image: url(../../../assets/img/icons/contact-phone.svg);
+}
+
+@media only screen and (max-width: 480px) {
+  .contacts-section {
+    padding: 4px 0;
+  }
+
+  #bootstrap-overrides .container.default .contacts-section p {
+    margin-bottom: 20px;
+    font-size: 17px;
+  }
+  
+}

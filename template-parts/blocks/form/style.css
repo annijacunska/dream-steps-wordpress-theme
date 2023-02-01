@@ -1,0 +1,280 @@
+.home .form-section {
+  background-color: #fff0d1;
+}
+
+.home .form-section h2 {
+  background-color: #fff0d1;
+  padding: 0 23px;
+}
+
+.form-section .heading {
+  margin-bottom: 14px;
+}
+
+#bootstrap-overrides .container.form {
+  white-space: nowrap;
+  padding-bottom: 149px;
+}
+
+.container.form form {
+  position: relative;
+}
+
+#bootstrap-overrides.single-product .container.form {
+  padding-bottom: 207px;
+}
+
+.form-section .form-content,
+.form-section .form-image {
+  display: inline-block;
+  white-space: normal;
+  vertical-align: top;
+}
+
+.form-section .form-content {
+  width: 46%;
+  padding-right: 57px;
+  padding-top: 48px;
+}
+
+.form-section .form-image {
+  width: 54%;
+}
+
+.form-image img {
+  width: 100%;
+  max-width: 660px;
+  position: relative;
+  right: 0;
+  -webkit-filter: drop-shadow(23px 25px 0px #d2614f);
+  filter: drop-shadow(23px 25px 0px #d2614f);
+}
+
+.home .form input,
+.home .form textarea {
+  background-color: #fff0d1;
+}
+
+input[type="submit"] {
+  border: none;
+  text-align: start;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output, 
+.wpcf7 form.unaccepted .wpcf7-response-output, 
+.wpcf7 form.payment-required .wpcf7-response-output {
+  color: #ffb900;
+  border: none;
+}
+
+.wpcf7 form.failed .wpcf7-response-output, 
+.wpcf7 form.aborted .wpcf7-response-output {
+  color: #dc3232;
+  border: none;
+}
+
+form .wpcf7-spinner {
+  margin: 10px 0;
+}
+
+.wpcf7 form .wpcf7-response-output {
+  margin: 0;
+  padding: 0;
+  border: none;
+}   
+
+
+
+/* Contacts page */
+
+.form-section.no-image {
+  padding-top: 41px;
+}
+
+.form-section.no-image .container.form {
+  padding-bottom: 0;
+}
+
+.form-section.no-image .container.form .heading {
+  text-align: left;
+}
+
+.form-section.no-image .container.form .heading::after {
+  display: none;
+}
+
+.form-section.no-image .container.form .heading h2 {
+  padding-left: 0;
+}
+
+.form-section.no-image .container.form .form-content {
+  padding-top: 15px;
+  padding-right: 0;
+  width: 100%;
+}
+
+#pieteikties-konsultacijai.no-image .container.form .form-content p {
+  margin-bottom: 25px;
+  width: 41.3%;
+}
+
+#pieteikties-konsultacijai.no-image .container.form .form-content p:nth-last-of-type(2) {
+  width: 57%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#pieteikties-konsultacijai.no-image .container.form .form-content p:nth-last-of-type(1) {
+  float: right;
+}
+
+.form-section.no-image form textarea {
+  height: 218px;
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+  .form-section .form-content {
+    width: 50%;
+    padding-right: 0;
+  }
+
+  .form-section .form-image {
+    width: 50%;
+    padding-left: 28px;
+    padding-top: 65px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .form-image img {
+    filter: drop-shadow(11px 12px 0px #d2614f);
+  }
+
+  .form-section.no-image form textarea {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  #bootstrap-overrides .container.form {
+    padding-bottom: 51px;
+  }
+
+  #bootstrap-overrides.single-product .container.form {
+    padding-bottom: 39px;
+  }  
+
+  .home .form-section h2 {
+    padding: 0 9px;
+  }
+
+  input[type="submit"] {
+    margin-top: 10px;
+  }
+
+  .form-section .heading {
+    white-space: normal;
+  }
+
+  .home .form-section h2 {
+    padding: 0 9px;
+  }
+
+  .form-section .form-content {
+    padding-top: 31px;
+  }
+
+  .single-product .form-section .form-content {
+    padding-top: 0;
+  }
+
+  .form-section.no-image {
+    padding-top: 64px;
+  }
+
+  .form-section.no-image .container.form .form-content {
+    padding-top: 6px;
+  }
+
+  #pieteikties-konsultacijai.no-image .container.form .form-content p {
+    margin-bottom: 16px;
+    width: 49.4%;
+  }
+
+  #pieteikties-konsultacijai.no-image .container.form .form-content p:nth-last-of-type(1),
+  #pieteikties-konsultacijai.no-image .container.form .form-content p:nth-last-of-type(2) {
+    width: 46.7%;
+  }
+
+  .form-section.no-image form textarea {
+    height: 182px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+
+  .home .form-section h2 {
+    width: min-content;
+  }
+
+  .form-section .form-image {
+    display: none;
+  }
+
+  .form-section .form-content {
+    width: 100%;
+  }
+
+  #pieteikties-konsultacijai.no-image .container.form .form-content p,
+  #pieteikties-konsultacijai.no-image .container.form .form-content p:nth-last-of-type(1),
+  #pieteikties-konsultacijai.no-image .container.form .form-content p:nth-last-of-type(2) {
+    width: 100%;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .single-product .form-section {
+    background-color: #fff0d1;
+  }
+
+  .single-product .form-section .heading h2 {
+    background-color: #fff0d1;
+    width: min-content;
+  }
+
+  .single-product .form input,
+  .single-product .form textarea {
+    background-color: #fff0d1;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+  .home .form-section h2 {
+    padding-left: 0;
+  }
+
+  .form-section .form-content {
+    padding-top: 0;
+  }
+
+  #bootstrap-overrides .container.form {
+    padding-top: 55px;
+  }
+
+  .form-section.no-image {
+    padding-top: 18px;
+  }
+
+  #bootstrap-overrides .container.default .container.form {
+    padding: 0;
+  }
+}

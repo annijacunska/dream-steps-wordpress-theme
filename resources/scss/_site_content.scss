@@ -1,0 +1,19 @@
+.bg-gradient,
+a.button.bg-gradient,
+a.button.bg-gradient:hover,
+button.bg-gradient,
+.woocommerce button.button.bg-gradient {
+  background: -moz-linear-gradient(92.3deg, #EEBE5C 10.88%, #C8414B 124.33%);
+  background: -webkit-linear-gradient(92.3deg, #EEBE5C 10.88%, #C8414B 124.33%);
+  background: linear-gradient(92.3deg, #EEBE5C 10.88%, #C8414B 124.33%);
+}
+
+.bg-gradient-reversed,
+a.button.bg-gradient-reversed,
+a.button.bg-gradient-reversed:hover,
+button.bg-gradient-reversed,
+.woocommerce button.button.bg-gradient-reversed {
+  background: -moz-linear-gradient(272.3deg, #EEBE5C 10.88%, #C8414B 124.33%);
+  background: -webkit-linear-gradient(272.3deg, #EEBE5C 10.88%, #C8414B 124.33%);
+  background: linear-gradient(272.3deg, #EEBE5C 10.88%, #C8414B 124.33%);
+}

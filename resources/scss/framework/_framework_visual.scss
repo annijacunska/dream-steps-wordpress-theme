@@ -1,0 +1,124 @@
+// Images
+img,
+.img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+// Text
+// General
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;  
+}
+
+.nowrap { white-space: nowrap; }
+
+.wrap { white-space: initial !important; }
+
+.overflow-hidden { overflow: hidden; }
+
+.nbsp-after:after { content: "\00a0"; }
+
+.bold,
+strong { font-weight: 700; }
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+  // Cursor
+.select:hover,
+.select *:hover,
+select:hover,
+select *:hover,
+.arrow:hover,
+.arrow *:hover,
+.btn,
+input[type="submit"]:hover {
+  cursor: pointer!important;
+}
+
+  // Buttons
+.btn,
+.wp-block-button__link {
+  position: relative;
+  display: block;
+  padding: 15px 24px 14px;
+  margin: 8px 0;
+  width: 395px;
+  height: 50px;
+  font-family: $f_default, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  line-height: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: transparent;
+  border-radius: 10px;
+  transition: background-color .3s;
+  cursor: pointer;
+}
+
+// Cookies
+.cc-window.cc-floating {
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: $c_primary;
+  max-width: none;
+
+  .cc-message {font-size: 25px; }
+
+  .cc-compliance {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+.cc-window .cc-compliance .cc-btn {
+  color: $c_t_light;
+  background: -moz-linear-gradient(92.3deg, #EEBE5C 10.88%, #C8414B 124.33%);
+  background: -webkit-linear-gradient(92.3deg, #EEBE5C 10.88%, #C8414B 124.33%);
+  background: linear-gradient(92.3deg, #EEBE5C 10.88%, #C8414B 124.33%);
+  border-radius: 10px;
+  transition: background .3s;
+  width: 300px;
+  flex: none;
+  font-size: 20px;
+
+  &.cc-deny {display: none;}
+}
+
+.cc-window .cc-link { 
+  color: $c_secondary; 
+  padding: 10px 0; 
+  position: absolute;
+  bottom: 28px;
+  left: 32px;
+}
+
+@media only screen and (max-width: $breakpoint_md) {
+  .cc-window.cc-floating .cc-message {font-size: 20px;}
+}
+
+@media only screen and (max-width: 550px) {
+  .cc-window .cc-compliance .cc-btn {width: 100%;}
+
+  .cc-window .cc-link { 
+    position: relative;
+    bottom: 0;
+    left: 0;
+    display: block;
+  }
+
+  .cc-window.cc-floating .cc-message { font-size: 17px;}
+}

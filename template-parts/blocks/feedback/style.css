@@ -1,0 +1,237 @@
+.feedback-section h2 {
+  background-color: #fff8e9;
+  padding: 0 23px;
+}
+
+#bootstrap-overrides .feedback-section .container {
+  margin-top: 130px;
+  margin-bottom: 62px;
+}
+
+#lightSlider {
+  height: 473px !important;
+}
+
+#lightSlider li.quote-item.active {
+  background-color: #fff0d1;
+  opacity: 1;
+}
+
+#lightSlider li.quote-item {
+  text-align: center;
+  background-color: #fff0d1;
+  opacity: 0.5;
+  border-radius: 30px;
+  box-shadow: -8px 8px 10px rgba(0, 0, 0, 0.1);
+  padding: 0;
+}
+
+#lightSlider li.quote-item::before,
+#lightSlider li.quote-item::after {
+  content: '“';
+  width: 40px;
+  height: 80px;
+  font-size: 100px;
+  color: #b54938;
+  position: absolute;
+  top: 13px;
+  left: 43px;
+}
+
+#lightSlider li.quote-item::after {
+  content: '”';
+  left: auto;
+  top: auto;
+  bottom: 7px;
+  right: 40px;
+}
+
+#lightSlider .quote-item:not(.active) {
+  transform: translateY(77px);
+  transition: transform 0.5s;
+}
+
+.quote-item .quote-content {
+  width: 676px;
+  height: 384px;
+  padding: 60px 47px;
+  padding-bottom: 0;
+}
+
+.quote-content h4 {
+  font-weight: normal;
+}
+
+.quote-content p {
+	display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.quote-item .feedback-rating {
+  margin-top: 9px;
+  margin-bottom: 34px;
+}
+
+.feedback-rating img {
+  margin: 0 4.5px;
+}
+
+/* Slider in editor - only to see which quotes have been added */
+
+.wp-block .feedback-section {
+  background-color: #fff8e9;
+}
+
+.wp-block #lightSlider li.quote-item {
+  width: 33%;
+  display: inline-block;
+  opacity: 1;
+}
+
+.wp-block li.quote-item .quote-content {
+  width: 100%;
+  height: auto;
+  padding: 20px 20px;
+}
+
+.wp-block #lightSlider {
+  height: 660px !important;
+}
+
+.wp-block li.quote-item .quote-content h4,
+.wp-block li.quote-item .quote-content p {
+  font-size: 0.8em;
+}
+
+.wp-block .feedback-rating img {
+  height: 15px;
+}
+
+.wp-block .feedback-rating {
+  margin: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .quote-item .quote-content {
+    width: 570px;
+    height: 365px;
+    padding: 50px 40px;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .quote-item .quote-content {
+    width: 570px;
+    height: 365px;
+    padding: 50px 40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  #lightSlider {
+    height: 409px !important;
+  }
+
+  #lightSlider .quote-item.active + li {
+    opacity: 1;
+  }
+
+  #lightSlider .quote-item:not(.active) {
+    transform: none;
+    transition: none;
+  }
+  
+  .quote-item .quote-content {
+    width: 300px;
+    height: 394px;
+    padding: 55px 16px;
+  }
+
+  .quote-content p {
+    -webkit-line-clamp: 8;
+  }
+
+  .feedback-rating img {
+    margin: 0px 2.5px;
+    height: 17px;
+  }
+
+  #bootstrap-overrides .feedback-section .container {
+    margin-top: -23px;
+    margin-bottom: 17px;
+  }
+
+  .quote-item .feedback-rating {
+    margin-top: 12px;
+    margin-bottom: 27px;
+  }
+
+  .lSSlideWrapper {
+    padding: 0px 72px;
+  }
+
+  .lSSlideOuter .lSPager.lSpg {
+    margin-top: 0 !important;
+  }
+
+  #lightSlider li.quote-item::before, #lightSlider li.quote-item::after {
+    width: 20px;
+    height: 48px;
+    font-size: 40px;
+    top: 12px;
+    left: 11px;
+  }
+  #lightSlider li.quote-item::after {
+    left: auto;
+    top: auto;
+    right: 18px;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+
+  #lightSlider .quote-item.active + li {
+    opacity: 0.5;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #bootstrap-overrides .feedback-section .container {
+    margin-top: 2px;
+    margin-bottom: 29px;
+  }
+  .lSSlideWrapper {
+    padding: 0px 24px;
+  }
+  .feedback-section h2 {
+    padding-left: 0;
+    width: min-content;
+  }
+  .quote-item .quote-content {
+    width: 241px;
+    height: 317px;
+    padding: 45px 13px;
+  }
+  #lightSlider li.quote-item {
+    border-radius: 10px;
+  }
+  #lightSlider li.quote-item::after {
+    right: 11px;
+    bottom: -3px;
+  }
+  .feedback-rating img {
+    height: 13px;
+  }
+  .quote-item .feedback-rating {
+    margin-top: 3px;
+    margin-bottom: 21px;
+  }
+  #lightSlider {
+    height: 330px !important;
+  }
+}
+
+
